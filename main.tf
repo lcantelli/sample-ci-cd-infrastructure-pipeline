@@ -2,8 +2,8 @@ resource "aws_vpc" "example_vcp" {
   cidr_block = "10.10.10.0/24"
 
   tags = {
-    Name = "Test VPC"
-    ProvisionedBy  = "Terraform"
+    Name          = "Test VPC"
+    ProvisionedBy = "Terraform"
   }
 }
 
@@ -12,8 +12,8 @@ resource "aws_subnet" "example_subnet1" {
   cidr_block = "10.10.10.0/25"
 
   tags = {
-    Name = "Test Subnet 1"
-    ProvisionedBy  = "Terraform"
+    Name          = "Test Subnet 1"
+    ProvisionedBy = "Terraform"
   }
 }
 
@@ -22,7 +22,7 @@ resource "aws_subnet" "example_subnet2" {
   cidr_block = "10.10.10.128/25"
 
   tags = {
-    Name = "Test Subnet 2"
-    ProvisionedBy  = "Terraform"
+    Name          = "Test Subnet 2"
+    ProvisionedBy = "Terraform"
   }
 }
