@@ -1,3 +1,9 @@
+resource "aws_default_vpc" "default" {
+  tags = {
+    Name = "Default VPC"
+  }
+}
+
 resource "aws_vpc" "example_vcp" {
   cidr_block = "10.10.10.0/24"
 
