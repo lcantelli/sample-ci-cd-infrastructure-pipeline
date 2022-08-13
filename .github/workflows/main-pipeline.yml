@@ -28,3 +28,9 @@ jobs:
       - 
         name: Terraform Validate
         run: terraform validate -no-color
+      - 
+        name: Terraform Plan
+        run: terraform plan
+      - 
+        name: Terraform Apply
+        run: terraform apply -auto-approve
