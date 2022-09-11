@@ -32,3 +32,12 @@ resource "aws_subnet" "example_subnet2" {
     ProvisionedBy = "Terraform"
   }
 }
+
+resource "aws_s3_bucket" "name" {
+  bucket = "diogodds-terraform-test"
+
+  tags = {
+    Name          = "Test Bucket"
+    ProvisionedBy = "Terraform"
+  }
+}
